@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="src/components/pokedex/PokeItem.css">
     <link rel="stylesheet" href="src/components/pokedex/PokeList.css">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lexend+Deca|Patua+One|Red+Hat+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animate.min.css">
     <title>Pokédex</title>
 
 <body>
     <header>
         <div class="logo-container">
-            <img src="./assets/pokedex-logo.png" alt="pokedex-logo">
+            <img class="animated rubberBand delay-2s" src="./assets/pokedex-logo.png" alt="pokedex-logo">
         </div>
     </header>
 
@@ -24,12 +25,12 @@
             <section class="options-section">
                 <div class="nav-bar">
                     <h2>Search Pokédex</h2>
-                    <p>Search by Name, Type, Egg Group, Attack, or Defense attributes in the Pokédex</p>
+                    <p>Search by Name, Type, Egg Group, Attack, or Defense</p>
                     <input type="text">
                     <button id="search-button">SEARCH</button>
 
                     <select>
-                        <option selected >GOTTA SORT 'EM ALL!</option>
+                        <option selected >SORT 'EM ALL!</option>
                         <option>BY NAME</option>
                         <option>BY ID</option>
                         <option>BY TYPE</option>

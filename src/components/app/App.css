@@ -16,6 +16,7 @@ font-family: 'Alfa Slab One', cursive; */
     padding: 0;
     height: 100;
     width: 25%;
+    grid-area: 'options';
 }
 
 .nav-bar {
@@ -42,13 +43,20 @@ input {
     width: 50%;
 }
 
+#search-button:hover {
+    transition: transform 100ms ease-in-out;
+    box-shadow: 2px 2px 3px darkred;
+    transform: translate3d(-1px, 1px, 0);
+}
+
 select {
     margin-top: 25px;
-    width: 75%;
+    width: 85%;
 }
 
 .list-section {
     padding: 20px 10px;
+    grid-area: 'list';
 }
 
 ul {
@@ -62,4 +70,11 @@ li.poke-name {
 
 li.type {
     font-family: 'Lexend Deca', sans-serif;
+}
+
+@media (min-width: 900px) {
+    main {
+        display: grid;
+        grid-template-areas: 'options list';
+    }
 }
