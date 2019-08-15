@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lexend+Deca|Patua+One|Red+Hat+Display&display=swap');
+
+/* font-family: 'Lexend Deca', sans-serif;
+font-family: 'Red Hat Display', sans-serif;
+font-family: 'Patua One', cursive;
+font-family: 'Alfa Slab One', cursive; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    background-image: url(/assets/background.png);
+}
