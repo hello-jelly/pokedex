@@ -8,79 +8,82 @@
     <link rel="stylesheet" href="src/main.css">
     <link rel="stylesheet" href="src/components/app/header.css">
     <link rel="stylesheet" href="src/components/app/App.css">
-    <link rel="stylesheet" href="src/components/pokedex/PokeList.css">
     <link rel="stylesheet" href="src/components/pokedex/PokeItem.css">
+    <link rel="stylesheet" href="src/components/pokedex/PokeList.css">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lexend+Deca|Patua+One|Red+Hat+Display&display=swap" rel="stylesheet">
     <title>Pokédex</title>
 
 <body>
     <header>
-        <img src="./assets/pokedex-logo.png" alt="pokedex-logo">
+        <div class="logo-container">
+            <img src="./assets/pokedex-logo.png" alt="pokedex-logo">
+        </div>
     </header>
 
     <main>
-        <section class="options-section">
-            <div id="root">
+        <div id="root">
+            <section class="options-section">
                 <div class="nav-bar">
                     <input type="text">
                     <button id="search-button">SORT 'EM</button>
 
                 <select>
-                    <option>THIS IS A DROP DOWN</option>
+                    <option>DROP DOWN</option>
+                    <option>OPTION</option>
                     <option>ANOTHER OPTION</option>
-                    <option>YET ANOTHER OPTION</option>
                 </select>
-            </div>
-        </section>
-
-        <section class="list-section">
-            <ul>
-                <div class="poke-item">
-                    <li class="poke-id">#123 TANGELA</li>
-                    <li class="ability">chlorophyll, leaf-guard, regenerator</li>
-                    <div class="image-container">
-                        <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/114.png">
-                    </div>
-                    <li class="attack-defense">Attack: 55 | Defense: 115</li>
                 </div>
+            </section>
 
-                <div class="poke-item">
-                    <li class="poke-id">#45 JIGGLYPUFF</li>
-                    <li class="ability">cute-charm, competitive, friend-guard</li>
-                    <div class="image-container">
-                        <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png">
+            <section class="list-section">
+                <ul class="pokedex">
+                    <div class="poke-item">
+                        <li class="poke-id">#123 TANGELA</li>
+                        <li class="ability">chlorophyll, leaf-guard, regenerator</li>
+                        <div class="image-container">
+                            <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/114.png">
+                        </div>
+                        <li class="attack-defense">Attack: 55 | Defense: 115</li>
                     </div>
-                    <li class="attack-defense">Attack: 45 | Defense: 20</li>
-                </div>
 
-                <div class="poke-item">
-                    <li class="poke-id">#128 GOLDEEN</li>
-                    <li class="ability">swift-swim, water-veil, lightning-rod</li>
-                    <div class="image-container">
-                        <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/118.png">
+                    <div class="poke-item">
+                        <li class="poke-id">#45 JIGGLYPUFF</li>
+                        <li class="ability">cute-charm, competitive, friend-guard</li>
+                        <div class="image-container">
+                            <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png">
+                        </div>
+                        <li class="attack-defense">Attack: 45 | Defense: 20</li>
                     </div>
-                    <li class="attack-defense">Attack: 67 | Defense: 60</li>
-                </div>
 
-                <div class="poke-item">
-                    <li class="poke-id">#117 LICKITUNG</li>
-                    <li class="ability">own-tempo, oblivious, cloud-nine</li>
-                    <div class="image-container">
-                        <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/108.png">
+                    <div class="poke-item">
+                        <li class="poke-id">#128 GOLDEEN</li>
+                        <li class="ability">swift-swim, water-veil, lightning-rod</li>
+                        <div class="image-container">
+                            <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/118.png">
+                        </div>
+                        <li class="attack-defense">Attack: 67 | Defense: 60</li>
                     </div>
-                    <li class="attack-defense">Attack: 55 | Defense: 75</li>
-                </div>
 
-                <div class="poke-item">
-                    <li class="poke-id">#126 HORSEA</li>
-                    <li class="ability">swift-swim, sniper, damp</li>
-                    <div class="image-container">
-                        <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/116.png">
+                    <div class="poke-item">
+                        <li class="poke-id">#117 LICKITUNG</li>
+                        <li class="ability">own-tempo, oblivious, cloud-nine</li>
+                        <div class="image-container">
+                            <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/108.png">
+                        </div>
+                        <li class="attack-defense">Attack: 55 | Defense: 75</li>
                     </div>
-                    <li class="attack-defense">Attack: 40 | Defense: 70</li>
-                </div>
-            </ul>
-        </section>
+
+                    <div class="poke-item">
+                        <li class="poke-id">#126 HORSEA</li>
+                        <li class="ability">swift-swim, sniper, damp</li>
+                        <div class="image-container">
+                            <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/116.png">
+                        </div>
+                        <li class="attack-defense">Attack: 40 | Defense: 70</li>
+                    </div>
+                </ul>
+            </section>
+        </div>
     </main>
 
     <script type="module" src="src/index.js"></script>
