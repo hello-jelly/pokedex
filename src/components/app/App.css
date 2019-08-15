@@ -15,6 +15,7 @@ font-family: 'Alfa Slab One', cursive; */
     margin: 0;
     padding: 0;
     height: 100;
+    width: 25%;
 }
 
 .nav-bar {
@@ -24,13 +25,26 @@ font-family: 'Alfa Slab One', cursive; */
     padding: 20px;
 }
 
+input {
+    margin-top: 15px;
+    width: 85%;
+}
+
 #search-button {
-    margin-top: 5px;
-    width: 80%;
+    font-family: 'Red Hat Display' sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: black;
+    color: white;
+    margin-top: 8px;
+    width: 50%;
 }
 
 select {
-    margin-top: 15px;
+    margin-top: 25px;
+    width: 60%;
 }
 
 .list-section {

@@ -11,8 +11,18 @@ font-family: 'Alfa Slab One', cursive; */
 
 body {
     margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.85em;
+    line-height: 1.2em;
 }
 
 main {
     background-image: url(/assets/background.png);
+}
+
+h2 {
+    font-family: 'Patua One', cursive;
+    font-size: 1.5em;
+    line-height: 1.25em;
+    margin-bottom: 5px;
 }

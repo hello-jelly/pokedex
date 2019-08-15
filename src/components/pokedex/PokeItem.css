@@ -5,12 +5,6 @@ font-family: 'Red Hat Display', sans-serif;
 font-family: 'Patua One', cursive;
 font-family: 'Alfa Slab One', cursive; */
 
-.pokedex {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
 .poke-item {
     display: flex;
     flex-direction: column;
