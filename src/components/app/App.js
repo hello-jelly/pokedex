@@ -26,7 +26,11 @@ class App extends Component {
     renderHTML() {
         return /*html*/`
             <div>
-                <!-- header goes here -->
+                <header>
+                    <div class="logo-container">
+                        <img src="./assets/pokedex-logo.png" alt="pokedex-logo">
+                    </div>
+                </header>
                 
                 <main>
                     <section class="options-section">
