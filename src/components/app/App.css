@@ -11,11 +11,8 @@
     flex-direction: row;
     align-items: center;
     background: #ef3d2b;
-    margin: 0;
     padding: 10px;
-    height: 100;
     width: 100vw;
-    grid-area: 'options';
 }
 
 .intro {
@@ -25,9 +22,13 @@
     margin-left: 30px;
 }
 
+.description {
+    margin-top: -2px;
+}
+
 form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 35%;
 }
 
@@ -57,13 +58,15 @@ input {
 
 select {
     height: 25px;
-    width: 20%;
-    margin-left: 20px;
+    width: 15%;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .list-section {
     padding: 20px 10px;
     grid-area: 'list';
+    background-image: url(/assets/background.png);
 }
 
 ul {

@@ -27,7 +27,7 @@ class Search extends Component {
 
         return /*html*/`
             <form>
-                <input name="search" value="${search} type="text">
+                <input name="search" value="${search}" type="text">
                 <button id="search-button">SEARCH</button>
             </form>
         `;

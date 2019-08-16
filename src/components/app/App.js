@@ -51,11 +51,11 @@ class App extends Component {
             <div class="layout">
                 <section class="options-section">
                     <div class="intro">
-                    <h2>Search Pokédex</h2>
-                    <p>Search by Name, Type, Egg Group, Attack, or Defense</p>
+                    <h2>Sort The Pokédex</h2>
+                    <p class="description">Use the menu or type in the search bar to sort the Pokédex by Name, ID, Type, Egg Group, Attack, or Defense.</p>
                     </div>
                         
-                    <!--- <select>
+                    <select>
                         <option selected >SORT 'EM ALL!</option>
                         <option>BY NAME</option>
                         <option>BY ID</option>
@@ -63,7 +63,7 @@ class App extends Component {
                         <option>EGG GROUP</option>
                         <option>ATTACK</option>
                         <option>DEFENSE</option>
-                    </select> --->
+                    </select>
                 </section>
                     
                 <section class="list-section"></section>
