@@ -6,7 +6,7 @@
     width: 100vw;
 }
 
-.options-section {
+section.options-section {
     display: flex;
     flex-direction: row;
     align-items: center;
