@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lexend+Deca|Patua+One|Red+Hat+Display&display=swap');
 
-/* font-family: 'Lexend Deca', sans-serif;
-font-family: 'Red Hat Display', sans-serif;
-font-family: 'Patua One', cursive;
-font-family: 'Alfa Slab One', cursive; */
-
 .layout {
     display: grid;
     grid-area: 1fh 1fr 1fr;
@@ -14,23 +9,32 @@ font-family: 'Alfa Slab One', cursive; */
 .options-section {
     display: flex;
     flex-direction: row;
+    align-items: center;
     background: #ef3d2b;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     height: 100;
     width: 100vw;
     grid-area: 'options';
 }
 
-.nav-bar {
+.intro {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    width: 35%;
+    margin-left: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
 }
 
 input {
-    margin-top: 15px;
-    width: 85%;
+    height: 25px;
+    width: 90%;
+    margin: 5px;
 }
 
 #search-button {
@@ -41,8 +45,8 @@ input {
     border-color: transparent;
     background-color: black;
     color: white;
-    margin-top: 8px;
-    width: 50%;
+    margin: 5px;
+    width: 25%;
 }
 
 #search-button:hover {
@@ -52,8 +56,9 @@ input {
 }
 
 select {
-    margin-top: 25px;
-    width: 85%;
+    height: 25px;
+    width: 20%;
+    margin-left: 20px;
 }
 
 .list-section {

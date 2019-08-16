@@ -1,5 +1,5 @@
 import Component from '../Component.js';
-import hashStorage from '../../services/hash-storage.js';
+import hashStorage from '../services/hash-storage.js';
 
 class Search extends Component {
 
@@ -27,11 +27,13 @@ class Search extends Component {
 
         return /*html*/`
             <form>
-                <input type="text">
+                <input name="search" value="${search} type="text">
                 <button id="search-button">SEARCH</button>
             </form>
         `;
     }
 }
+
+
 
 export default Search;

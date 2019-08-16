@@ -1,7 +1,7 @@
 const URL = 'https://alchemy-pokedex.herokuapp.com/api/pokedex';
 
-export function getTypes(options) {
-    const page = options.page;
+export function pokemon(options) {
+    const page = options.page || 1;
     const search = options.search;
 
     const url = `${URL}?page=${page || 1}?search=${search || 1}`;

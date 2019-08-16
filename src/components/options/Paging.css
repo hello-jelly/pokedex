@@ -1,24 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lexend+Deca|Patua+One|Red+Hat+Display&display=swap');
+
 .paging {
     display: flex;
-    align-items: center;
     justify-content: flex-end;
-    margin-bottom: 10px;
+    padding-bottom: 15px;
+    margin-left: 5px;
 }
 
-.paging button {
-    position: relative;
-    height: 50px;
-    width: 50px;
-    font-size: 2em;
-    background-color: sandybrown;
-    color: white;
+.prev {
+    margin-right: 5px;
 }
 
-.paging button:disabled {
-    background-color: bisque;
-    color: oldlace;
+.next {
+    margin-left: 5px;
 }
 
-.paging span {
-    margin: 0 10px;
+span {
+    font-family: 'Lexend Deca', sans-serif;
 }

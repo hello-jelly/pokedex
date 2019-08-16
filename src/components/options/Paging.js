@@ -1,5 +1,5 @@
 import Component from '../Component.js';
-import hashStorage from '../../services/hash-storage.js';
+import hashStorage from '../services/hash-storage.js';
 
 class Paging extends Component {
     onRender(dom) {
