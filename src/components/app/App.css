@@ -5,9 +5,10 @@ font-family: 'Red Hat Display', sans-serif;
 font-family: 'Patua One', cursive;
 font-family: 'Alfa Slab One', cursive; */
 
-#root {
-    display: flex;
-    flex-direction: row;
+.layout {
+    display: grid;
+    grid-area: 1fh 1fr 1fr;
+    width: 100vw;
 }
 
 .options-section {
@@ -15,14 +16,13 @@ font-family: 'Alfa Slab One', cursive; */
     margin: 0;
     padding: 0;
     height: 100;
-    width: 25%;
+    width: 100vw;
     grid-area: 'options';
 }
 
 .nav-bar {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     padding: 20px;
 }
 
@@ -70,11 +70,4 @@ li.poke-name {
 
 li.type {
     font-family: 'Lexend Deca', sans-serif;
-}
-
-@media (min-width: 900px) {
-    main {
-        display: grid;
-        grid-template-areas: 'options list';
-    }
 }

@@ -1,16 +1,15 @@
 import Component from '../Component.js';
-import PokemonItem from './PokemonItem.js';
+import PokeItem from './PokeItem.js';
 
 class PokeList extends Component {
     
     onRender(dom) {
-        const pokemons = this.props.pokemons;
-
-        pokemons.forEach(pokemon => {
+        const pokemon = this.props.pokemon;
+        pokemon.results.forEach(pokemon => {
             const props = { pokemon: pokemon };
-            const pokeItem = new PokemonItem(props);
-            const pokemonItemDOM = pokeItem.renderDOM();
-            dom.appendChild(pokemonItemDOM);
+            const pokeItem = new PokeItem(props);
+            const pokeItemDOM = pokeItem.renderDOM();
+            dom.appendChild(pokeItemDOM);
         });
 
     }

@@ -5,7 +5,7 @@ class Header extends Component {
         return /*html*/`
             <header>
                 <div class="logo-container">
-                    <img src="./assets/pokedex-logo.png" alt="Pokédex Logo">
+                    <img class="animated rubberBand delay-2s" src="./assets/pokedex-logo.png" alt="Pokédex Logo">
                 </div>
             </header>
         `;

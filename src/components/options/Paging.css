@@ -1,0 +1,24 @@
+.paging {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.paging button {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    font-size: 2em;
+    background-color: sandybrown;
+    color: white;
+}
+
+.paging button:disabled {
+    background-color: bisque;
+    color: oldlace;
+}
+
+.paging span {
+    margin: 0 10px;
+}

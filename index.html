@@ -10,88 +10,15 @@
     <link rel="stylesheet" href="src/components/pokedex/PokeItem.css">
     <link rel="stylesheet" href="src/components/pokedex/PokeList.css">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lexend+Deca|Patua+One|Red+Hat+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <title>Pokédex</title>
 
 <body>
-    <header>
-        <div class="logo-container">
-            <img class="animated rubberBand delay-2s" src="./assets/pokedex-logo.png" alt="pokedex-logo">
-        </div>
-    </header>
-
     <main>
-        <div id="root">
-            <section class="options-section">
-                <div class="nav-bar">
-                    <h2>Search Pokédex</h2>
-                    <p>Search by Name, Type, Egg Group, Attack, or Defense</p>
-                    <input type="text">
-                    <button id="search-button">SEARCH</button>
-
-                    <select>
-                        <option selected >SORT 'EM ALL!</option>
-                        <option>BY NAME</option>
-                        <option>BY ID</option>
-                        <option>BY TYPE</option>
-                        <option>EGG GROUP</option>
-                        <option>ATTACK</option>
-                        <option>DEFENSE</option>
-                    </select>
-                </div>
-            </section>
-
-            <section class="list-section">
-                <ul class="pokedex">
-                    <div class="poke-item">
-                        <li class="poke-id">#123 TANGELA</li>
-                        <li class="ability">chlorophyll, leaf-guard, regenerator</li>
-                        <div class="image-container">
-                            <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/114.png">
-                        </div>
-                        <li class="attack-defense">Attack: 55 | Defense: 115</li>
-                    </div>
-
-                    <div class="poke-item">
-                        <li class="poke-id">#45 JIGGLYPUFF</li>
-                        <li class="ability">cute-charm, competitive, friend-guard</li>
-                        <div class="image-container">
-                            <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png">
-                        </div>
-                        <li class="attack-defense">Attack: 45 | Defense: 20</li>
-                    </div>
-
-                    <div class="poke-item">
-                        <li class="poke-id">#128 GOLDEEN</li>
-                        <li class="ability">swift-swim, water-veil, lightning-rod</li>
-                        <div class="image-container">
-                            <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/118.png">
-                        </div>
-                        <li class="attack-defense">Attack: 67 | Defense: 60</li>
-                    </div>
-
-                    <div class="poke-item">
-                        <li class="poke-id">#117 LICKITUNG</li>
-                        <li class="ability">own-tempo, oblivious, cloud-nine</li>
-                        <div class="image-container">
-                            <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/108.png">
-                        </div>
-                        <li class="attack-defense">Attack: 55 | Defense: 75</li>
-                    </div>
-
-                    <div class="poke-item">
-                        <li class="poke-id">#126 HORSEA</li>
-                        <li class="ability">swift-swim, sniper, damp</li>
-                        <div class="image-container">
-                            <img class="poke-img" src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/116.png">
-                        </div>
-                        <li class="attack-defense">Attack: 40 | Defense: 70</li>
-                    </div>
-                </ul>
-            </section>
-        </div>
+        
+        <div id="root"></div>
+    
     </main>
-
     <script type="module" src="src/index.js"></script>
 </body>
 </html>
