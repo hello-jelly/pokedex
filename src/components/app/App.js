@@ -25,25 +25,23 @@ class App extends Component {
         return /*html*/`
             <div class="layout">
                 <section class="options-section">
-                    <div class="nav-bar">
-                            <h2>Search Pokédex</h2>
-                            <p>Search by Name, Type, Egg Group, Attack, or Defense</p>
-                            
-                            <form>
-                            <input type="text">
-                            <button id="search-button">SEARCH</button>
-                            </form>
-                            
-                        <select>
-                            <option selected >SORT 'EM ALL!</option>
-                            <option>BY NAME</option>
-                            <option>BY ID</option>
-                            <option>BY TYPE</option>
-                            <option>EGG GROUP</option>
-                            <option>ATTACK</option>
-                            <option>DEFENSE</option>
-                        </select>
-                    </div>        
+                    <h2>Search Pokédex</h2>
+                    <p>Search by Name, Type, Egg Group, Attack, or Defense</p>
+                    
+                    <form>
+                    <input type="text">
+                    <button id="search-button">SEARCH</button>
+                    </form>
+                        
+                    <select>
+                        <option selected >SORT 'EM ALL!</option>
+                        <option>BY NAME</option>
+                        <option>BY ID</option>
+                        <option>BY TYPE</option>
+                        <option>EGG GROUP</option>
+                        <option>ATTACK</option>
+                        <option>DEFENSE</option>
+                    </select>
                 </section>
                     
                 <section class="list-section"></section>

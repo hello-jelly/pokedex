@@ -12,6 +12,8 @@ font-family: 'Alfa Slab One', cursive; */
 }
 
 .options-section {
+    display: flex;
+    flex-direction: row;
     background: #ef3d2b;
     margin: 0;
     padding: 0;
