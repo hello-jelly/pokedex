@@ -17,10 +17,33 @@ main {
 
 .search-name {
     padding: 5px;
+    width: 300px;
+}
+
+.name-input {
+    width: 250px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.85em;
+}
+
+select {
+    background-color: lightgray;
+    font-family: 'Red Hat Display' sans-serif;
+    font-weight: bold;
+    margin-right: 5px;
+    width: 90px;
+    height: 25px;
 }
 
 .filter-by {
     padding: 5px;
+    width: 300px;
+}
+
+.filter-input {
+    width: 150px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.85em;
 }
 
 #search-button {
