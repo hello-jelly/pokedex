@@ -28,7 +28,7 @@ main {
 
 select {
     background-color: lightgray;
-    font-family: 'Red Hat Display' sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
     margin-right: 5px;
     width: 90px;
@@ -47,7 +47,7 @@ select {
 }
 
 #search-button {
-    font-family: 'Red Hat Display' sans-serif;
+    font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
     padding: 5px;
     border-radius: 5px;
