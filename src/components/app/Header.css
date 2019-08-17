@@ -75,4 +75,6 @@ footer {
     height: 3em;
     text-align: center;
     padding: 10px 0;
+    background-color: black;
+    color: white;
 }

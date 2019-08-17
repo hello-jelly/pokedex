@@ -13,7 +13,6 @@ class App extends Component {
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
         
-        
         const listSection = dom.querySelector('.list-section');
         const paging = new Paging();
         listSection.appendChild(paging.renderDOM());
