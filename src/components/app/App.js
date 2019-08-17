@@ -26,17 +26,16 @@ class App extends Component {
         
         function loadPoke() {
             const options = hashStorage.get();
-            pokemon(options)
-                .then(data => {
-                    const pokemon = data.results;
-                    const totalCount = data.count;
+            pokemon(options).then(data => {
+                const pokemon = data.results;
+                const totalCount = data.count;
 
-                    pokeList.update({ pokemon: pokemon });
-                    paging.update({ 
-                        totalCount: totalCount,
-                        currentPage: +options.page
-                    });
+                pokeList.update({ pokemon: pokemon });
+                paging.update({ 
+                    totalCount: totalCount,
+                    currentPage: +options.page
                 });
+            });
         }
 
         loadPoke();
