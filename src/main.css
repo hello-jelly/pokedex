@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lexend+Deca|Patua+One|Red+Hat+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 0.85em;
+    line-height: 1.2em;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+h2 {
+    font-family: 'Patua One', cursive;
+    font-size: 1.5em;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
