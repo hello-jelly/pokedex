@@ -70,3 +70,9 @@ header img:hover {
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
 }
+
+footer {
+    height: 3em;
+    text-align: center;
+    padding: 10px 0;
+}

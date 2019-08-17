@@ -4,15 +4,20 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     margin: 0;
     font-family: 'Lexend Deca', sans-serif;
     font-size: 0.85em;
     line-height: 1.2em;
+    height: 100%;
 }
 
-main {
-    background-image: url(/assets/background.png);
+#root {
+    height: 100%;
 }
 
 h2 {

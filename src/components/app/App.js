@@ -1,8 +1,9 @@
 import Component from '../Component.js';
-import Header from '../app/Header.js';
-import PokeList from '../pokedex/PokeList.js';
+import Header from './Header.js';
+import Footer from './Footer.js';
 import Search from '../options/Search.js';
 import Paging from '../options/Paging.js';
+import PokeList from '../pokedex/PokeList.js';
 import { pokemon } from '../services/poke-api.js';
 import hashStorage from '../services/hash-storage.js';
 
@@ -11,16 +12,12 @@ class App extends Component {
         const header = new Header();
         const headerDOM = header.renderDOM();
         dom.prepend(headerDOM);
-
-        const optionsSection = dom.querySelector('.options-section');
-        const search = new Search();
-        optionsSection.appendChild(search.renderDOM());
-
-        const listSection = dom.querySelector('.list-section');
         
+        
+        const listSection = dom.querySelector('.list-section');
         const paging = new Paging();
         listSection.appendChild(paging.renderDOM());
-
+        
         const pokeList = new PokeList({ pokemon: [] });
         listSection.appendChild(pokeList.renderDOM());
         
@@ -29,7 +26,7 @@ class App extends Component {
             pokemon(options).then(data => {
                 const pokemon = data.results;
                 const totalCount = data.count;
-
+                
                 pokeList.update({ pokemon: pokemon });
                 paging.update({ 
                     totalCount: totalCount,
@@ -43,31 +40,34 @@ class App extends Component {
         window.addEventListener('hashchange', () => {
             loadPoke();
         });
+
+        const search = new Search();
+        const searchDOM = search.renderDOM();
+        const optionsSection = dom.querySelector('.options-section');
+        optionsSection.appendChild(searchDOM);
+        
+        const footer = new Footer();
+        const footerDOM = footer.renderDOM();
+        dom.appendChild(footerDOM);
+
+        loadPoke();
+
+        window.addEventListener('hashchange', () => {
+            loadPoke();
+        });
     }
 
     renderHTML() {
         return /*html*/`
-            <div class="layout">
-                <section class="options-section">
-                    <div class="intro">
-                    <h2>Sort The Pokédex</h2>
-                    <p class="description">Use the menu or type in the search bar to sort the Pokédex by Name, ID, Type, Egg Group, Attack, or Defense.</p>
-                    </div>
-                        
-                    <select>
-                        <option selected >SORT 'EM ALL!</option>
-                        <option>BY NAME</option>
-                        <option>BY ID</option>
-                        <option>BY TYPE</option>
-                        <option>EGG GROUP</option>
-                        <option>ATTACK</option>
-                        <option>DEFENSE</option>
-                    </select>
-                </section>
-                    
+            <div>
+                <!-- Header goes here -->
+            <main>
+                <section class="options-section"></section>
                 <section class="list-section"></section>
+            </main>
+                <!--- Footer goes here --->
             </div>
-        `;
+    `;
     }
 }
 

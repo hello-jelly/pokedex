@@ -5,9 +5,9 @@ QUnit.module('Query String Parser');
 
 test('converts query string to object', assert => {
     // arrange
-    const query = 'pokemon=tangela&page=1'; 
+    const query = 'pokemon=snorlax&page=1'; 
     const expected = {
-        pokemon: 'tangela',
+        pokemon: 'snorlax',
         page: '1'
     };
 
@@ -20,11 +20,11 @@ test('converts query string to object', assert => {
 
 test('converts object to query string', assert => {
     const queryProps = {
-        pokemon: 'tangela',
+        pokemon: 'snorlax',
         page: '1'
     };
 
-    const expected = 'pokemon=tangela&page=1'; 
+    const expected = 'pokemon=snorlax&page=1'; 
     
     // act
     const query = QUERY.stringify(queryProps);
